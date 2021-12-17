@@ -1,0 +1,86 @@
+<!-- Slide Toggle Animation Click On text Then Display More Text Using Jquery -->
+
+<!--Include Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#flip").click(function(){
+			//$("#panel").slideDown();	//Only Down 
+			/* $("#panel").slideDown(6000); */
+			/* $("#panel").slideUp(); */
+			$("#panel").slideToggle(2000);	//Miliseconds
+			//$("#panel").fadeToggle(6000);
+			$("#panel2").slideUp(2000);
+		});
+
+		$("#flip2").click(function(){
+			//$("#panel2").slideDown();	//Only Down 
+			/* $("#panel2").slideDown(6000); */
+			/* $("#panel2").slideUp(); */
+			$("#panel2").slideToggle(2000);	//Miliseconds
+			//$("#panel2").fadeToggle(6000);
+			$("#panel").slideUp(2000);
+		});
+	});
+</script>
+
+<style type="text/css">
+/* About Us */
+#flip {
+	padding: 5px;
+	text-align: center;
+	background-color: black;
+	border: solid 1px #ff0000;
+	color: yellow;
+}
+
+#panel {
+	padding: 5px;
+	text-align: center;
+	background-color: teal;
+	border: solid 1px #ff0000;
+	color: yellow;
+}
+#panel {
+	padding: 50px;
+	display: none;
+	color: white;
+}
+
+/* Contact Us */
+#flip2 {
+	padding: 5px;
+	text-align: center;
+	background-color: black;
+	border: solid 1px #ff0000;
+	color: yellow;
+}
+
+#panel2 {
+	padding: 5px;
+	text-align: center;
+	background-color: teal;
+	border: solid 1px #ff0000;
+	color: yellow;
+}
+#panel2 {
+	padding: 50px;
+	display: none;
+	color: white;
+}
+</style>
+
+<div id="flip">About Us</div>
+<div id="panel" style="box-shadow: 1px 1px 10px 1px rgb(255, 0, 0); text-shadow: 3px 2px 5px rgb(230 , 120, 100);">
+	A Committee on Digital Payments was constituted by Department of Economic Affairs, Ministry of Finance in August 2016 under my Chairmanship to inter-alia recommend medium term measures of promotion of Digital Payments Ecosystem in the country. The Committee submitted its final report to Hon’ble Finance Minister in December 2016. One of the key recommendations of the Committee related to development of a metric for Digital Payments. As a follow-up on this a group of Stakeholders from Different Departments of Government of India and RBI was constituted in NITI Aayog under my chairmanship to facilitate the work relating to development of the metric. This group prepared a document on the measurement issues of Digital Payments. Accordingly, a booklet titled “Digital Payments: Trends, Issues and Challenges” was prepared in May 2017 and was released by me in July 2017.
+</div>
+
+<div id="flip2">Contact Us</div>
+<div id="panel2" style="box-shadow: 1px 1px 10px 1px rgb(255, 0, 0); text-shadow: 3px 2px 5px rgb(230 , 120, 100);">
+	<h1>Name: JK Infotech</h1>
+	<h2>Mobile: 9723055185</h2>
+	<h2>Email: jaykachhadiya24@gmail.com</h2>
+	<hr>
+	Please Follow My Page To Get Daily Visit.
+</div>

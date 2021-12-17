@@ -1,0 +1,14 @@
+<!-- How To Disabled Right Click on Browser Using Jquery -->
+
+<!--Include Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript" language="javascript">
+	$(function(){
+		$(this).bind("contextmenu", function(e){
+			e.preventDefault();
+		});
+	});
+</script>
+
+<img src="rightclickoption.jpg">

@@ -1,0 +1,22 @@
+<!--Inciude Jquery File Here-->
+<script src="jquery.js"></script>
+
+<!--Coding Inside Jquery-->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#jk").hide();
+		});
+
+		$("#a").click(function(){
+			$("#abc").hide();
+		});
+	});
+</script>
+
+<p id=jk>This is a ID.</p>
+<p>Click On Button To Hide Above Content</p>
+<p id="abc">This is Another ID.</p>
+<p>Hello JK Infotech</p>
+<button>Click To Hide</button>
+<button id="a">Click To Hide abc</button>

@@ -1,0 +1,25 @@
+<!-- Pass a Element Then Call Blur Event -->
+
+<!--Include Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("input").blur(function(){
+			$(this).animate({
+				width: 300,
+				height: 30,
+				}, 5000);	//Miliseconds
+
+			$(this).css("background-color", "#808009");
+			$(this).css("color", "white");
+			$(this).css("padding", "10px");
+		});
+	});
+</script>
+
+<h1>Contact Us</h1>
+<input style="width: 900px; height: 50px;" placeholder="Enter Name"><br><br>
+<input style="width: 900px; height: 50px;" placeholder="Page Name"><br><br>
+<input style="width: 900px; height: 50px;" placeholder="Message"><br><br>
+<input style="width: 900px; height: 50px;" placeholder="Comment">

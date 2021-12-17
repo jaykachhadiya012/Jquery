@@ -1,0 +1,26 @@
+<!--Include Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("div").mouseenter(function(){
+			$(this).css("color", "red");
+			$(this).css("box-shadow", "10px 10px 5px #888");
+			$(this).css("background-color", "black");
+			$(this).css("padding", "10px");
+		});
+
+		$("div").mouseleave(function(){
+			$(this).css("color", "black");
+			$(this).css("box-shadow", "0px 1px 1px #888");
+			$(this).css("background-color", "silver");
+			$(this).css("padding", "1px");
+		});
+	});
+</script>
+
+<div>JK Infotech</div>
+<div>Please Follow</div>
+<div>My Page</div>
+<div>To Get Daily Learn</div>
+<div>Thanks For Visiting</div>

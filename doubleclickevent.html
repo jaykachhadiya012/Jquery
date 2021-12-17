@@ -1,0 +1,20 @@
+<!--Include Jquery File Here-->
+<script src="jquery.js"></script>
+
+<!--Jquery dblclick Event Here-->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").dblclick(function(){
+			document.getElementById("jk").innerHTML = "Please Follow My Page";
+
+			//Apply CSS
+			$("#jk").css("font-size", "30px");
+			//Apply Color
+			$("#jk").css("color", "red");
+			$("#jk").css("background-color", "black");
+		});
+	});
+</script>
+
+<button>Double Click Me</button>
+<div id="jk"></div>

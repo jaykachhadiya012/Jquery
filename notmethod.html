@@ -1,0 +1,16 @@
+<!-- Given Class are Not Selected Using Jquery -->
+
+<!--Include Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("p").not(".jk").css("background-color", "teal");
+		$("p").not(".jk").css("color", "white");
+	});
+</script>
+
+<p class="jk">Not Apply on CSS Class Using not() Method</p>
+<p>JK Infotech</p>
+<p>Please Follow My Page</p>
+<p class="jk">Thanks For Visiting</p>

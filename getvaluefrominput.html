@@ -1,0 +1,15 @@
+<!--Inciude Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#test").keyup(function(){
+			document.getElementById("out").innerHTML = $("#test").val();
+			$("#out").css("color", "white");
+			$("#out").css("background-color", "black");
+		});
+	});
+</script>
+
+<input type="text" id="test" value="">
+<div id="out"></div>

@@ -1,0 +1,32 @@
+<!-- Implements Apply CSS Class in Jquery -->
+
+<!--Include Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("p").mouseenter(function(){
+			$(this).addClass("myclass");
+		});
+
+		$("p").mouseleave(function(){
+			$(this).addClass("av");
+		});
+	});
+</script>
+
+<style type="text/css">
+.myclass {
+	color: blue;
+	font-size: 30px;
+	font-family: Arial;
+}
+.av {
+	color: tomato;
+	font-size: 31px;
+	font-family: cabria;
+}
+</style>
+
+<p>JK Infotech</p>
+<p>Thank For Visiting</p>

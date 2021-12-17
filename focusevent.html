@@ -1,0 +1,24 @@
+<!--Include Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("input").focus(function(){
+			$(this).animate({
+				width: 900,
+				fontSize: 30,
+				}, 10000);	//Miliseconds
+
+			$(this).css("background-color", "#808009");
+			$(this).css("color", "white");
+			$(this).css("padding", "10px");
+			$(this).css("box-shadow", "1px 1px 10px 1px");
+		});
+	});
+</script>
+
+<input><br><br>
+<input><br><br>
+<input><br><br>
+<input><br><br>
+<input>

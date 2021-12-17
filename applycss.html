@@ -1,0 +1,26 @@
+<!--Inciude Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript">
+	//Apply Code Here
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("p").css("background-color", "yellow");
+			$("p").css("color", "red");
+			$("p").css("font-size", "30px");
+			$("p").css("padding", "20px");
+		});
+
+		$("#second").click(function(){
+			$("p").css("background-color", "black");
+			$("p").css("color", "white");
+			$("p").css("font-size", "20px");
+			$("p").css("padding", "30px");
+		});
+	});
+</script>
+
+<p>JK Infotech</p>
+
+<button>CSS</button>
+<button id="second">Change CSS</button>

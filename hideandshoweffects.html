@@ -1,0 +1,30 @@
+<!--Hide and Show Data Using Jquery-->
+
+<!--Inciude Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript">
+	//Hide
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("p").hide();
+		});
+	});
+
+	//Show
+	$(document).ready(function(){
+		//# Means ID
+		$("#s").click(function(){
+			$("p").show();
+		});
+	});
+</script>
+
+<!--Create Contents-->
+<p>This is a Simple Data</p>
+<p>Another Paragraph Here</p>
+<p>Hello</p>
+
+<!--Create HTML Button-->
+<button>Hide</button>
+<button id="s">Show</button>

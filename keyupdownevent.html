@@ -1,0 +1,23 @@
+<!--Include Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("input").keydown(function(){
+			$(this).css("background-color", "Tomato");
+			$(this).css("color", "white");
+			$(this).css("padding", "10px");
+		});
+
+		$("input").keyup(function(){
+			$(this).css("background-color", "SlateBlue");
+			$(this).css("color", "silver");
+			$(this).css("padding", "15px");
+		});
+	});
+</script>
+
+
+<input><br><br>
+<input><br><br>
+<input>

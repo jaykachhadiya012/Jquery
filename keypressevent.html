@@ -1,0 +1,26 @@
+<!--Include Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("input").keypress(function(){
+			$(this).css("background-color", "red");
+			$(this).css("color", "white");
+			$(this).css("padding", "10px");
+			$(this).css("width", "90%");
+		});
+
+		$("input").keyup(function(){
+			$(this).css("background-color", "yellow");
+			$(this).css("color", "black");
+			$(this).css("padding", "10px");
+			$(this).css("width", "50%");
+		});
+	});
+</script>
+
+<input><br><br>
+<input><br><br>
+<input><br><br>
+<input><br><br>
+<input>

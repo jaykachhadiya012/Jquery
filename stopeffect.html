@@ -1,0 +1,16 @@
+<!-- Image Hover of on Image with Stop Animation Using Jquery -->
+
+<!--Include Jquery File Here-->
+<script src="jquery.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("img").hover(function(){
+			$(this).stop(true, true).fadeOut();
+		}, function(){
+			$(this).stop(true, true).fadeIn();
+		});
+	});
+</script>
+
+<img src="stopeffect.jpg">
